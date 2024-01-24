@@ -1,0 +1,14 @@
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\bin\Debug\net6.0\University.exe
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\bin\Debug\net6.0\University.deps.json
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\bin\Debug\net6.0\University.runtimeconfig.json
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\bin\Debug\net6.0\University.dll
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\bin\Debug\net6.0\University.pdb
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.GeneratedMSBuildEditorConfig.editorconfig
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.AssemblyInfoInputs.cache
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.AssemblyInfo.cs
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.csproj.CoreCompileInputs.cache
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.dll
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\refint\University.dll
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.pdb
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\University.genruntimeconfig.cache
+C:\Latihan\C#\Danny Liven Siswoyo_University_BC42\University\src\University\obj\Debug\net6.0\ref\University.dll

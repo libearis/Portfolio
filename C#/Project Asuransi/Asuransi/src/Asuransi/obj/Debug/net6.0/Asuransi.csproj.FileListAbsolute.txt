@@ -1,0 +1,14 @@
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\bin\Debug\net6.0\Asuransi.exe
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\bin\Debug\net6.0\Asuransi.deps.json
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\bin\Debug\net6.0\Asuransi.runtimeconfig.json
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\bin\Debug\net6.0\Asuransi.dll
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\bin\Debug\net6.0\Asuransi.pdb
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.AssemblyInfoInputs.cache
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.AssemblyInfo.cs
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.csproj.CoreCompileInputs.cache
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.dll
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\refint\Asuransi.dll
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.pdb
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\Asuransi.genruntimeconfig.cache
+C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\obj\Debug\net6.0\ref\Asuransi.dll
