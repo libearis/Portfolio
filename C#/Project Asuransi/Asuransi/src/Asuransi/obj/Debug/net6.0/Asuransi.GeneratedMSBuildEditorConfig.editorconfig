@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Asuransi
-build_property.ProjectDir = C:\Latihan\C#\Danny Liven Siswoyo_Asuransi_BC42\Asuransi\src\Asuransi\
+build_property.ProjectDir = C:\Portfolio\C#\Project Asuransi\Asuransi\src\Asuransi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

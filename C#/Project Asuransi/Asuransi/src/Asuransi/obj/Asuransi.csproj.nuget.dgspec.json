@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Latihan\\C#\\Danny Liven Siswoyo_Asuransi_BC42\\Asuransi\\src\\Asuransi\\Asuransi.csproj": {}
+    "C:\\Portfolio\\C#\\Project Asuransi\\Asuransi\\src\\Asuransi\\Asuransi.csproj": {}
   },
   "projects": {
-    "C:\\Latihan\\C#\\Danny Liven Siswoyo_Asuransi_BC42\\Asuransi\\src\\Asuransi\\Asuransi.csproj": {
+    "C:\\Portfolio\\C#\\Project Asuransi\\Asuransi\\src\\Asuransi\\Asuransi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Latihan\\C#\\Danny Liven Siswoyo_Asuransi_BC42\\Asuransi\\src\\Asuransi\\Asuransi.csproj",
+        "projectUniqueName": "C:\\Portfolio\\C#\\Project Asuransi\\Asuransi\\src\\Asuransi\\Asuransi.csproj",
         "projectName": "Asuransi",
-        "projectPath": "C:\\Latihan\\C#\\Danny Liven Siswoyo_Asuransi_BC42\\Asuransi\\src\\Asuransi\\Asuransi.csproj",
+        "projectPath": "C:\\Portfolio\\C#\\Project Asuransi\\Asuransi\\src\\Asuransi\\Asuransi.csproj",
         "packagesPath": "C:\\Users\\1968\\.nuget\\packages\\",
-        "outputPath": "C:\\Latihan\\C#\\Danny Liven Siswoyo_Asuransi_BC42\\Asuransi\\src\\Asuransi\\obj\\",
+        "outputPath": "C:\\Portfolio\\C#\\Project Asuransi\\Asuransi\\src\\Asuransi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,178 @@
+body
+{
+    margin: 0;
+}
+
+.container
+{
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 7fr;
+
+    gap: 0 20px;
+    grid-template-areas: 
+    "header todo"
+    "main todo";
+}
+
+header
+{
+    grid-area: header;
+
+    color: rgb(62,62, 202);
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-bottom: 4px solid rgb(62,62, 202);
+}
+
+main
+{
+    grid-area: main;
+
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.maincontainer
+{
+    position: relative;
+    display: inline-block;
+}
+
+.popup
+{
+    visibility: hidden;
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    left: 50%;
+}
+
+.popupactive
+{
+    width: 450px;
+    height: 250px;
+    background-color: white;
+    visibility: visible;
+}
+
+.popup .popupheader
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    color: black;
+    background-color: aqua;
+    height: 60px;
+}
+
+.popupheader div
+{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.popupheader button
+{
+    background-color: red;
+    color: white;
+}
+
+.popup .popupcontent
+{
+    padding-top: 10px;
+    padding-left: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+.contactaddress
+{
+    display: flex;
+}
+
+.contactaddress ul
+{
+    color: purple;
+    margin-top: 0;
+    padding-left: 30px;
+    list-style-type: none;
+}
+
+.contactaddress ul span
+{
+    color: black;
+    margin-left: 20px;
+}
+
+.contactphone span, .contactwebsite span
+{
+    color: black;
+    margin-left: 40px;
+}
+
+ul
+{
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+table
+{
+    width: 900px;
+}
+
+th
+{
+    background-color: rgb(58, 128, 240);
+    border-right: 1px solid white;
+    color: white;
+}
+
+tbody tr td
+{
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+tbody tr:nth-child(even)
+{
+    background-color: rgb(194, 208, 229);
+}
+
+tbody button
+{
+    color: white;
+    background-color: #4834d4;
+    height: 30px;
+}
+
+.todo
+{
+    grid-area: todo;
+    font-size: 30px;
+    color: blue;
+    background-color: #c7ecee;
+
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-top: 20px;  
+}
+
+.todo div
+{
+    margin-top: 20px;
+    width: 90%;
+    color: black;
+    border-bottom: 2px solid black;
+    font-size: 12px;
+}

@@ -1,0 +1,125 @@
+body
+{
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    background-color: #7b7b7b;
+}
+
+.container
+{
+    display: grid;
+    width: 1024px;
+    height: 768px;
+    margin: auto;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 100px 30px 1fr 40px;
+}
+
+header, .horizontalnav, .sidenav, main, footer
+{
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+header
+{
+    background-color: #008aff;
+    grid-column: span 2;
+}
+
+.headerflex
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img
+{
+    margin-top: -10px;
+    width: 100px;
+    height: 100px;
+}
+
+.searchbox
+{
+    margin-top: 60px;
+}
+
+button
+{
+    color: white;
+    background-color: #3a3a3a;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.horizontalnav a:hover
+{
+    color: #7b7b7b;
+    transition: 0.3s;
+}
+
+.sidenav a:hover
+{
+    color: #008aff;
+    transition: 0.3s;
+}
+
+.horizontalnav > div
+{
+    margin-top: -4px;
+}
+
+.horizontalnav li
+{
+    margin-top: 20px;
+    display: inline;
+}
+
+.navbarcontent
+{
+    padding-left: 20px;
+}
+
+.horizontalnav
+{
+    background-color: #28a9d9;
+    grid-column: span 2;
+}
+
+.sidenav
+{
+    background-color: #3a3a3a;
+}
+
+.sidenav > ul
+{
+    margin-left: -35px;
+    margin-top: 0;
+}
+
+ul li
+{
+    line-height: 40px;
+    list-style-type: none;
+}
+
+main
+{
+    padding-top: 0px;
+    background-color: white;
+    color: black;
+}
+
+
+footer
+{
+    background-color: #008aff;
+    grid-column: span 2;
+}

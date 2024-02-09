@@ -74,4 +74,13 @@ public class Customer : Prospect
         System.Console.WriteLine($"Gender: {Gender}");
         System.Console.WriteLine($"Customer Number: {CustomerNumber}");
     }
+    public Dictionary<string, Customer> MengembalikanDictionary()
+    {
+        Dictionary<string, Customer> customers = new Dictionary<string, Customer>
+        {
+            {CustomerNumber, this}
+        };
+
+        return customers;
+    }
 }

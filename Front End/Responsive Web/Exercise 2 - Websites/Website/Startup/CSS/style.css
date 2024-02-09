@@ -1,0 +1,366 @@
+@font-face
+{
+	font-family:"OpenSans";
+	src:url(../Font/OpenSans-Regular.ttf);
+}
+
+html
+{
+	font-family:"OpenSans",Helvetica, Verdana;
+	height:100%;
+}
+
+body
+{
+	height: 100vh;
+	display: flex;
+    margin: 0;
+	background-image: linear-gradient(#4372b8, #539cc5, #39b5ab, #3ef6c7);
+}
+
+.container
+{
+	margin: auto;
+    width: 1000px;
+
+    display: grid;
+    grid-template-rows: 125px 70px 100px 250px 250px 100px;
+	grid-template-columns: 250px 250px 250px 250px;
+    grid-template-areas:
+	"header header header header"
+	"firstnav firstnav firstnav firstnav"
+	"secondnav secondnav secondnav secondnav"
+	"main main main main"
+	"main main main main"
+	"footer footer footer footer";
+}
+
+.dropdown
+{
+	display: flex;
+}
+
+.dropdown img
+{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 25px;
+	right: 25px;
+}
+
+.dropdown-content
+{
+	display: none;
+	text-align: center;
+	width: 120px;
+	height: 170px;
+	background-color: darkblue;
+	color: white;
+	position: absolute;
+	top: 70px;
+	right: 25px;
+}
+
+.dropdown-content a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content
+{
+	display: block;
+}
+
+header
+{
+	margin: auto;
+    grid-area: header;
+}
+
+header img
+{
+	width: 120px;
+	height: 120px;
+}
+
+.firstnav
+{
+    grid-area: firstnav;
+	text-align: center;
+	word-spacing: 20px;
+}
+
+.firstnav div
+{
+	margin-top: 20px;
+}
+
+.firstnav li
+{
+	display: inline;
+}
+
+.firstnav a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.firstnav a:hover
+{
+	border-bottom: 3px solid white;
+}
+
+.secondnav
+{
+	background-color: white;
+    grid-area: secondnav;
+	display: flex;
+	justify-content: space-evenly;
+    align-items: center;
+}
+
+.secondnav div
+{
+	display: flex;
+	align-items: center;
+}
+
+.secondnav li
+{
+	display: inline;
+}
+
+.secondnav a
+{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.secondnav div > img
+{
+	width: 30px;
+	height: 30px;
+}
+
+.secondnav li div
+{
+	color: grey;
+	font-weight: normal;
+}
+
+main
+{
+    grid-area: main;
+	display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-template-rows: 250px 250px;
+	grid-template-areas: 
+	"image1 image2 image3 image4"
+	"image5 image6 image7 image8";
+}
+
+main img
+{
+	width: 250px;
+	height: 250px;
+}
+
+.background1
+{
+	grid-area: image1;
+	background-color: red;
+}
+
+.background2
+{
+	grid-area: image2;
+	background-color: aqua;
+}
+
+.background3
+{
+	grid-area: image3;
+	background-color: black;
+}
+
+.background4
+{
+	grid-area: image4;
+	background-color: purple;
+}
+
+.background5
+{
+	grid-area: image5;
+	background-color: white;
+}
+
+.background6
+{
+	grid-area: image6;
+	background-color: gray;
+}
+
+.background7
+{
+	grid-area: image7;
+	background-color: orange;
+}
+
+.background8
+{
+	grid-area: image8;
+	background-color: brown;
+}
+
+.image1:hover, .image2:hover, .image3:hover, .image4:hover, .image5:hover, .image6:hover, .image7:hover, .image8:hover
+{
+	opacity: 0.3;
+}
+
+footer
+{
+	background-color: white;
+    grid-area: footer;
+	text-align: center;
+	font-size: 14px;
+}
+
+footer > div
+{
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.container
+	{
+		display: grid;
+		justify-content: center;
+		grid-template-rows: 125px 70px 100px 250px 250px 250px 100px;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-areas:
+		"header header header"
+		"firstnav firstnav firstnav"
+		"secondnav secondnav secondnav"
+		"main main main"
+		"main main main"
+		"main main main"
+		"footer footer footer";
+	}
+	main
+	{
+		grid-area: main;
+		display: grid;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: repeat(3, 250px);
+		grid-template-areas: 
+		"image1 image2 image3"
+		"image4 image5 image6"
+		"image7 image8 none";
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.container
+	{
+		display: grid;
+		justify-content: center;
+		grid-template-rows: 125px 70px 200px 250px 250px 250px 250px 80px;
+		grid-template-columns: repeat(2, 250px);
+		grid-template-areas:
+		"header header"
+		"firstnav firstnav"
+		"secondnav secondnav"
+		"main main"
+		"main main"
+		"main main"
+		"footer footer";
+	}
+	main
+	{
+		grid-area: main;
+		display: grid;
+		grid-template-columns: repeat(2, 250px);
+		grid-template-rows: repeat(2, 250px);
+		grid-template-areas: 
+		"image1 image2"
+		"image3 image4"
+		"image5 image6"
+		"image7 image8";
+	}
+	.secondnav
+	{
+		background-color: white;
+		grid-area: secondnav;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding-left: 120px;
+		align-items: flex-start;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.container
+	{
+		display: grid;
+		justify-content: center;
+		grid-template-rows: 125px 150px 200px repeat(8, 250px) 180px;
+		grid-template-columns: 250px;
+		grid-template-areas:
+		"header"
+		"firstnav"
+		"secondnav"
+		"main"
+		"main"
+		"main"
+		"main"
+		"main"
+		"main"
+		"main"
+		"main"
+		"footer";
+	}
+	main
+	{
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 250px;
+		grid-template-rows: repeat(8, 250px);
+		grid-template-areas: 
+		"image1"
+		"image2"
+		"image3"
+		"image4"
+		"image5"
+		"image6"
+		"image7"
+		"image8";
+	}
+	.firstnav
+	{
+		background-color: #3b3b3b;
+		text-align: left;
+		word-spacing: normal;
+		padding-left: 20px;
+		margin-top: 10px;
+	}
+	.firstnav li
+	{
+		display: block;
+	}
+	.secondnav
+	{
+		padding-top: 20px;
+		display: block;
+		padding-left: 0px;
+	}
+	.secondnav div
+	{
+		padding-left: 5px;
+	}
+}
