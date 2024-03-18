@@ -10,3 +10,7 @@
     b. Object Oriented Programming
     c. Creating Business model project
 
+ 3. Framework ASP .Net:
+    a. MVC and RestfulAPI
+    b. Security with JWT token and Claimtypes (B-crypt encryption)
+    c. Entity Framework for Database and Razor for FrontEnd
