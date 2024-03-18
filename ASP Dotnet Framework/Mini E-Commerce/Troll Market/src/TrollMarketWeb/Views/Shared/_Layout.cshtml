@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="header-flex">
+                <h2>Troll Market</h2>
+                <div>
+                    <partial name="_UserInfo"></partial>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div>
+                <partial name="_NavBasedOnRole"></partial>
+            </div>
+        </nav>
+        <div class="header-page">
+            <div>
+            @RenderSection("Breadcrumbs", true)
+            </div>
+        </div>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

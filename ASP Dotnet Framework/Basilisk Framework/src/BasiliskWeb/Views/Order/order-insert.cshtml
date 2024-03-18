@@ -1,0 +1,113 @@
+@model Order.OrderInsertVM
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span> ORDER INDEX / INSERT ORDER</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="../account/change-password-form.html" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post" class="upsert-form" asp-action="Insert">
+        <input type="hidden" />
+        <input type="hidden" />
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>Customer*</label></td>
+                    <td> 
+                        <select name="customerId" asp-for="@Model.CustomerId">
+                            @foreach(var customer in Model.Customers)
+                            {
+                                <option value="@customer.Id">@customer.CompanyName</option>
+                            }
+                        </select>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Salesman*</label></td>
+                    <td>
+                        <select asp-for="@Model.SalesEmployeeNumber">
+                            @foreach(var salesman in Model.Salesmans)
+                            {
+                                <option value="@salesman.SalesEmployeeNumber">@salesman.SalesEmployeeFullName</option>
+                            }
+                        </select>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=2 class="combined-validation">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>     
+                <tr>
+                    <td><label asp-for="@Model.OrderDate">Order Date*</label></td>
+                    <td>
+                        <input type="date" id="orderDate" asp-for="@Model.OrderDate">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>              
+                <tr>
+                    <td><label asp-for="@Model.ShippedDate">Shipped Date</label></td>
+                    <td>
+                        <input type="date" id="shippedDate" asp-for="@Model.ShippedDate">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.DueDate">Due Date</label></td>
+                    <td>
+                        <input type="date" id="dueDate" asp-for="@Model.DueDate">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Delivery*</label></td>
+                    <td>
+                        <select asp-for="@Model.DeliveryId">
+                            @foreach(var delivery in Model.Deliveries)
+                            {
+                                <option value="@delivery.Id">@delivery.CompanyName</option>
+                            }
+                        </select>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label asp-for="@Model.DestinationAddress">Destination Address*</label></td>
+                    <td>
+                        <textarea id="destinationAddress" asp-for="@Model.DestinationAddress"></textarea>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.DestinationCity">Destination City*</label></td>
+                    <td>
+                        <input type="text" id="destinationCity" asp-for="@Model.DestinationCity">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.DestinationPostalCode">Destination Postal Code*</label></td>
+                    <td>
+                        <input type="text" id="destinationPostalCode" asp-for="@Model.DestinationPostalCode">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit">Insert Order</button>
+    </form>
+</main>

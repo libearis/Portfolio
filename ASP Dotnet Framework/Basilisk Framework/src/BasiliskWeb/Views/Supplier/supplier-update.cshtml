@@ -1,0 +1,79 @@
+@model Supplier.SupplierUpdateVM
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>SUPPLIER INDEX / UPDATE SUPPLIER</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="../account/change-password-form.html" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post" class="upsert-form">
+        <input type="hidden" />
+        <input type="hidden" />
+        <table>
+            <tbody>
+                <tr>
+                    <td><label asp-for="@Model.CompanyName">Company Name*</label></td>
+                    <td>
+                        <input type="text" asp-for="@Model.CompanyName">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.CompanyName"></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.ContactPerson">Contact Person*</label></td>
+                    <td>
+                        <input type="text" asp-for="@Model.ContactPerson">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.ContactPerson"></span></div>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><label asp-for="@Model.JobTitle">Job Title*</label></td>
+                    <td>
+                        <input type="text" asp-for="@Model.JobTitle">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.JobTitle"></span></div>
+                    </td>
+                </tr>    
+                <tr>
+                    <td class="textarea-label"><label asp-for="@Model.Address">Address</label></td>
+                    <td>
+                        <textarea name="address" asp-for="@Model.Address"></textarea>
+                        <div class="field-validation-error"><span asp-validation-for="@Model.Address"></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.City">City</label></td>
+                    <td>
+                        <input type="text" name="city" asp-for="@Model.City">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.City"></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Phone">Phone</label></td>
+                    <td>
+                        <input type="tel" name="phone" asp-for="@Model.Phone">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.Phone"></span></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Email">Email</label></td>
+                    <td>
+                        <input type="email" name="email" asp-for="@Model.Email">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.Email"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit">Update Supplier</button>
+    </form>
+</main>

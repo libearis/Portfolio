@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\CSS\\font-awesome.css",
+      "PackagePath": "staticwebassets\\CSS\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\CSS\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\CSS\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\CSS\\normalize.css",
+      "PackagePath": "staticwebassets\\CSS\\normalize.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\CSS\\style.css",
+      "PackagePath": "staticwebassets\\CSS\\style.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\JS\\book.js",
+      "PackagePath": "staticwebassets\\JS\\book.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\JS\\category.js",
+      "PackagePath": "staticwebassets\\JS\\category.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\JS\\customer.js",
+      "PackagePath": "staticwebassets\\JS\\customer.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\JS\\loan.js",
+      "PackagePath": "staticwebassets\\JS\\loan.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Danny Liven Siswoyo_Mid Exam_BC42\\Winterhold\\src\\WinterholdWeb\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WinterholdWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WinterholdWeb.props",
+      "PackagePath": "build\\WinterholdWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WinterholdWeb.props",
+      "PackagePath": "buildMultiTargeting\\WinterholdWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WinterholdWeb.props",
+      "PackagePath": "buildTransitive\\WinterholdWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,80 @@
+@model Customer.InsertCustomerVM
+<form method="post" asp-action="Insert">
+    <h1>Insert Customer</h1>
+    <input type="hidden"/>
+    <input type="hidden"/>
+    <table>
+        <tbody id="insert-form">
+            <tr>
+                <td><label>Membership Number*</label></td>
+                <td>
+                    <input type="text" asp-for="@Model.MembershipNumber">
+                    <div class="field-validation-error"><span asp-validation-for="MembershipNumber">@ViewBag.Message</span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Identity*</label></td>
+                <td>
+                    <input type="radio" asp-for="@Model.IdentityNumber" id="ktp" value="ktp">
+                    <label for="ktp">KTP</label>
+                    <input type="radio" asp-for="@Model.IdentityNumber" id="sim" value="sim">
+                    <label for="sim">SIM</label>
+                    <input type="radio" asp-for="@Model.IdentityNumber" id="pasport" value="pasport">
+                    <label for="pasport">Pasport</label>
+                    <div class="field-validation-error"><span asp-validation-for="IdentityNumber"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Nomor</label></td>
+                <td><input type="text" asp-for="@Model.IdentityNumber"></td>
+            </tr>
+            <tr>
+                <td><label>First Name*</label></td>
+                <td>
+                    <input type="text" asp-for="@Model.FirstName">
+                    <div class="field-validation-error"><span asp-validation-for="FirstName"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td>
+                    <input type="text" asp-for="@Model.LastName">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Birth Date*</label></td>
+                <td>
+                    <input type="date" asp-for="@Model.BirthDate">
+                    <div class="field-validation-error"><span asp-validation-for="BirthDate"></span></div> 
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender*</label></td>
+                <td>
+                    <input type="radio" asp-for="@Model.Gender" id="male" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" asp-for="@Model.Gender" id="female" value="Female">
+                    <label for="female">Female</label>
+                    <div class="field-validation-error"><span asp-validation-for="Gender"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone</label></td>
+                <td>
+                    <input type="text" asp-for="@Model.Phone">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label"><label>Address</label></td>
+                <td>		                    
+                    <textarea id="address" cols="40" rows="5" asp-for="@Model.Address"></textarea>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="button-25">Insert New Customer</button>
+    <button class="button-25"><a asp-action="Index">Back to Index</a></button>
+</form>

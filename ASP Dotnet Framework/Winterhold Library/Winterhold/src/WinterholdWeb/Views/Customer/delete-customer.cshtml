@@ -1,0 +1,61 @@
+@model Customer.UpdateCustomerVM
+<form method="post" asp-action="Delete">
+    <h1>Delete Customer</h1>
+    <input type="hidden"/>
+    <input type="hidden"/>
+    <table>
+        <tbody id="insert-form">
+            <tr>
+                <td><label>Membership Number</label></td>
+                <td>
+                    <label>@Model.MembershipNumber</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>First Name*</label></td>
+                <td>
+                    <label>@Model.FirstName</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td>
+                    <label>@Model.LastName</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Birth Date*</label></td>
+                <td>
+                    <label>@Model.BirthDate</label>
+                    <div class="field-validation-error"></div> 
+                </td>
+            </tr>
+            <tr>
+                <td><label>Gender*</label></td>
+                <td>
+                    <label>@Model.Gender</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Phone</label></td>
+                <td>
+                    <label>@Model.Phone</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label"><label>Address</label></td>
+                <td>		                    
+                    <label>@Model.Address</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="button-25">Delete Customer</button>
+    <button class="button-25"><a asp-action="Index">Back to Index</a></button>
+</form>

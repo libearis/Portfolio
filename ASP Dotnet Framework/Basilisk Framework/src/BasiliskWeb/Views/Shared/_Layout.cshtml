@@ -1,0 +1,77 @@
+@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/ico" href="~/favicon.ico"/>
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+	<link rel="stylesheet" href="~/css/authorization.css" />
+	<link rel="stylesheet" href="~/css/responsive.css" />
+</head>
+<body class="main-body">
+    <nav>
+        @RenderSection("Breadcrumbs", false)
+		<div class="company-logo">
+			<img src="~/image/logo.png" alt="Basilisk" />
+			<h1>
+				Trade of <span class="bold">basilisk</span>
+			</h1>
+		</div>
+		<a class="menu dashboard" asp-controller="Dashboard" asp-action="Index">
+			<i class="fas fa-chart-pie"></i>
+			<span>Dashboard</span>
+		</a>
+		<a class="menu category" asp-controller="Category" asp-action="Index">
+			<i class="fas fa-th"></i>
+			<span>Category</span>
+		</a>
+		<a class="menu supplier" asp-controller="Supplier" asp-action="Index">
+			<i class="fab fa-amazon"></i>
+			<span>Supplier</span>
+		</a>
+		<a class="menu product" asp-controller="Product" asp-action="Index">
+			<i class="fas fa-box-open"></i>
+			<span>Product</span>
+		</a>
+		<a class="menu region" asp-controller="Region" asp-action="Index">
+			<i class="fas fa-map-marked-alt"></i>
+			<span>Region</span>
+		</a>
+		<a class="menu customer" asp-controller="Customer" asp-action="Index">
+			<i class="fas fa-users"></i>
+			<span>Customer</span>
+		</a>
+		<a class="menu delivery" asp-controller="Delivery" asp-action="Index">
+			<i class="fas fa-truck-moving"></i>
+			<span>Delivery</span>
+		</a>
+		<a class="menu salesman" asp-controller="Sales" asp-action="Index">
+			<i class="fas fa-user-tie"></i>
+			<span>Salesman</span>
+		</a>
+		<a class="menu order" asp-controller="Order" asp-action="Index">
+			<i class="fas fa-file-invoice-dollar"></i>
+			<span>Order</span>
+		</a>
+	</nav>
+    <header>
+		<div class="bread-crumbs">
+			<a class="toggle-menu" href=""><i class="fas fa-bars"></i></a>
+			<span>CATEGORY INDEX</span>
+		</div>
+		<div class="user-wrapper">
+			<partial name="_LoginButton"></partial>
+		</div>	
+	</header>
+    @RenderBody()
+    <footer>
+		Copyrights &copy; 2021
+		<span class="author">Boby Widjaja</span>
+		All rights reserved.
+	</footer>
+</body>
+</html>

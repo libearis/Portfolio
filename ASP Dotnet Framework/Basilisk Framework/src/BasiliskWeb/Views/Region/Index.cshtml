@@ -1,0 +1,141 @@
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>REGION INDEX</span>
+    </div>
+    <div class="user-wrapper">
+        <partial name="_LoginButton"></partial>
+    </div>
+</header>
+<main>
+    <form method="post" class="region-form" action="">
+        <input type="hidden" />
+        <input type="hidden" />
+        <div class="region-form-flex">
+            <h1>Insert New Region</h1>
+            <button>X</button>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>Region City*</label></td>
+                    <td>
+                        <input type="text" name="city" id="nameinput">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label>Remark</label></td>
+                    <td>
+                        <textarea name="remark" id="remarkinput"></textarea>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit" id="insertsubmit">Insert New Region</button>
+    </form>
+    <form method="post" class="region-edit" action="">
+        <input type="hidden" />
+        <input type="hidden" />
+        <div class="region-edit-flex">
+            <h1>Update Region</h1>
+            <button>X</button>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>Region City*</label></td>
+                    <td>
+                        <input type="text" name="city" id="editname">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label>Remark</label></td>
+                    <td>
+                        <textarea name="remark" id="editremark"></textarea>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit" id="editsubmit">Update Region</button>
+    </form>
+    <div class="grid-container region-detail">
+        <section class="header-info">
+            <div class="region-detail-flex">
+                <div>
+                    <div>City: <span class="cityname-detail">Bandung</span></div>
+                    <div>Remark: <span class="remark-detail">No Store or Office (Employee Allowance)</span></div>
+                </div>
+                <button>X</button>
+            </div>
+        </section>
+        <form method="get" class="filter" action="">
+            <input type="hidden" name="id">
+            <input type="text" name="employeeNumber" placeholder="Employee Number...">
+            <input type="text" name="name" placeholder="Full Name..." th:value="${name}">
+            <select name="employeeLevel">
+                <option th:value=null>No Specific Level</option>
+                <option value="1">Regional_Sales_Director</option>
+                <option value="2">Retail_Sales</option>
+                <option value="3">Wholesale_Sales</option>
+            </select>
+            <input type="text" name="superiorName" placeholder="Superior Name...">
+            <button class="blue-button" type="submit">Search</button>
+        </form>
+        <table>
+            <thead>
+                <th>Employee Number</th>
+                <th>Full Name</th>
+                <th>Level</th>
+                <th>Superior</th>
+            </thead>
+            <tbody class="salesdetailtbody">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="pagination">
+                            <div id="pagecount-detail">default</div>
+                            <div id="paginationdiv-detail">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="grid-container region-index">
+        <form method="get" class="filter">
+            <input type="text" name="city" id="nameinputsearch" placeholder="Region City...">
+            <button class="blue-button" id="searchbutton">Search</button>
+        </form>
+        <a class="blue-button create-button">Insert New Region</a>
+        <table>
+            <thead>
+                <th>Action</th>
+                <th>City</th>
+                <th>Remark</th>
+            </thead>
+            <tbody class="maintbody">
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <div class="pagination">
+                            <div id="pagecount">default</div>
+                            <div id="paginationdiv">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="disable-container"></div>
+</main>
+<script src="~/JS/regiontest.js"></script>

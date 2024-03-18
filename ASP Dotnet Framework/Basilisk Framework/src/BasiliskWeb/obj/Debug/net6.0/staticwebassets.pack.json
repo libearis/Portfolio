@@ -1,0 +1,125 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\apexcharts.css",
+      "PackagePath": "staticwebassets\\CSS\\apexcharts.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\authorization.css",
+      "PackagePath": "staticwebassets\\CSS\\authorization.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\font-awesome.css",
+      "PackagePath": "staticwebassets\\CSS\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\CSS\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\normalize.css",
+      "PackagePath": "staticwebassets\\CSS\\normalize.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\responsive.css",
+      "PackagePath": "staticwebassets\\CSS\\responsive.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\CSS\\site.css",
+      "PackagePath": "staticwebassets\\CSS\\site.css"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\Image\\logo.png",
+      "PackagePath": "staticwebassets\\Image\\logo.png"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\JS\\regiontest.js",
+      "PackagePath": "staticwebassets\\JS\\regiontest.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\JS\\sales.js",
+      "PackagePath": "staticwebassets\\JS\\sales.js"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Bootcamp Indocyber\\Framework\\Basilisk Framework\\src\\BasiliskWeb\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BasiliskWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BasiliskWeb.props",
+      "PackagePath": "build\\BasiliskWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BasiliskWeb.props",
+      "PackagePath": "buildMultiTargeting\\BasiliskWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BasiliskWeb.props",
+      "PackagePath": "buildTransitive\\BasiliskWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,123 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TrollMarketWeb
+build_property.RootNamespace = TrollMarketWeb
+build_property.ProjectDir = C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketWeb\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketWeb
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Account/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Account/notLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxub3RMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Account/register-buyer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci1idXllci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Account/register-seller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci1zZWxsZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Admin/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5caW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Buyer/failed-topup.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJcZmFpbGVkLXRvcHVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Buyer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnV5ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Cart/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Cart/purchase-all.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxwdXJjaGFzZS1hbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/History/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yeVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Merchandise/delete-product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2hhbmRpc2VcZGVsZXRlLXByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Merchandise/edit-product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2hhbmRpc2VcZWRpdC1wcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Merchandise/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2hhbmRpc2VcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Merchandise/insert-new.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2hhbmRpc2VcaW5zZXJ0LW5ldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Seller/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VsbGVyXGluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shared/_ContentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250ZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shared/_LayoutLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shared/_NavBasedOnRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZCYXNlZE9uUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shared/_UserInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VySW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shipment/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcG1lbnRcaW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/Shop/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Bootcamp Indocyber/Framework/Danny Liven Siswoyo_Final Exam_BC42/Troll Market/src/TrollMarketWeb/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

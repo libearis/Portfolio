@@ -1,0 +1,66 @@
+@model Book.UpdateBookVM
+<form method="post" asp-action="DeleteConfirm" asp-route-bookCode="@Model.Code">
+    <h1>Delete This Book?</h1>
+    <input type="hidden"/>
+    <input type="hidden"/>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Code*</label></td>
+                <td>
+                    <label asp-for="@Model.Code">@Model.Code</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Title*</label></td>
+                <td>
+                    <label>@Model.Title</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Category</label></td>
+                <td>
+                    <label>@Model.CategoryName</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Author*</label></td>
+                <td>
+                    <select asp-for="@Model.AuthorId" disabled ="true">
+                        @foreach(var author in Model.Authors)
+                        {
+                            <option value="@author.Value">@author.Text</option>
+                        }
+                    </select>
+                    <div class="field-validation-error"></div> 
+                </td>
+            </tr>
+            <tr>
+                <td><label>Release Date</label></td>
+                <td>
+                    <label>@Model.ReleaseDate?.ToString("dd MMMM yyyy")</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Total Page</label></td>
+                <td>
+                    <label>@Model.TotalPage</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label"><label>Summary</label></td>
+                <td>		                    
+                    <label>@Model.Summary</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="button-25">Delete @Model.Title</button>
+    <button class="button-25"><a asp-action="Index" asp-route-categoryName="@Model.CategoryName">Back to Index</a></button>
+</form>

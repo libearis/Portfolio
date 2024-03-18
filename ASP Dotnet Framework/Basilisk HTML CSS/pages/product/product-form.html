@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basilisk</title>
+	<link rel="icon" type="image/ico" href="../../favicon.ico"/>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/font-awesome.css" />
+    <link rel="stylesheet" href="../../css/site.css" />
+	<link rel="stylesheet" href="../../css/authorization.css" />
+	<link rel="stylesheet" href="../../css/responsive.css" />
+    <script src="../../js/jquery-3.6.0.js"></script>
+	<script src="../../js/apexcharts.js"></script>
+	<script src="../../js/site.js" defer></script>
+</head>
+<body class="main-body">
+	<nav>
+		<div class="company-logo">
+			<img src="../../image/logo.png" alt="Basilisk" />
+			<h1>
+				Trade of <span class="bold">basilisk</span>
+			</h1>
+		</div>
+		<a class="menu dashboard" href="../dashboard/dashboard-index.html">
+			<i class="fas fa-chart-pie"></i>
+			<span>Dashboard</span>
+		</a>
+		<a class="menu category" href="../category/category-index.html">
+			<i class="fas fa-th"></i>
+			<span>Category</span>
+		</a>
+		<a class="menu supplier" href="../supplier/supplier-index.html">
+			<i class="fab fa-amazon"></i>
+			<span>Supplier</span>
+		</a>
+		<a class="menu product" href="product-index.html">
+			<i class="fas fa-box-open"></i>
+			<span>Product</span>
+		</a>
+		<a class="menu region" href="../region/region-index.html">
+			<i class="fas fa-map-marked-alt"></i>
+			<span>Region</span>
+		</a>
+		<a class="menu customer" href="../customer/customer-index.html">
+			<i class="fas fa-users"></i>
+			<span>Customer</span>
+		</a>
+		<a class="menu delivery" href="../delivery/delivery-index.html">
+			<i class="fas fa-truck-moving"></i>
+			<span>Delivery</span>
+		</a>
+		<a class="menu salesman" href="../salesman/salesman-index.html">
+			<i class="fas fa-user-tie"></i>
+			<span>Salesman</span>
+		</a>
+		<a class="menu order" href="../order/order-index.html">
+			<i class="fas fa-file-invoice-dollar"></i>
+			<span>Order</span>
+		</a>
+		<a class="menu api" href="javascript:;">
+			<i class="fas fa-server"></i>
+			<span>API Doc</span>
+		</a>
+	</nav>
+	<header>
+		<div class="bread-crumbs">
+			<a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+			<span>PRODUCT INDEX / IF(INSERT or UPDATE) PRODUCT</span>
+		</div>
+		<div class="user-wrapper">
+			<div class="user">
+				<a href="../account/change-password-form.html" class="full-name">anonymous</a>
+				<span class="role">guest</span>
+			</div>
+			<div class="sign-out">
+				<form action="" method="POST">
+					<input type="hidden" />
+					<button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<main>
+		<form method="post" class="upsert-form" action="" enctype="multipart/form-data">
+			<input type="hidden" />
+			<input type="hidden" />
+			<input type="hidden" />
+		    <table>
+		        <tbody>
+		            <tr>
+		                <td><label>Product Name*</label></td>
+		                <td>
+		                    <input type="text" id="name">
+		                	<div class="field-validation-error"></div>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td><label>Category*</label></td>
+		                <td>
+					        <select name="categoryId">
+								<option th:value="null">No Specific Category</option>
+								<option value="1">Food</option>
+								<option value="2">Electronic</option>
+								<option value="3">Fashion</option>
+							</select>
+		                    <div class="field-validation-error"></div>
+		                </td>
+		            </tr>   
+		            <tr>
+		                <td><label>Supplier</label></td>
+		                <td>
+					        <select name="supplierId">
+								<option th:value="null">No Specific Supplier</option>
+								<option value="1">Indofood</option>
+								<option value="2">Samsung</option>
+								<option value="3">Electronic City</option>
+							</select>
+		                    <div class="field-validation-error"></div>
+		                </td>
+		            </tr>     
+		            <tr>
+		                <td><label>Price*</label></td>
+		                <td>
+		                    <input type="text" name="price" class="moneyConversion">
+		                	<div class="field-validation-error"></div>
+		                </td>
+		            </tr>              
+		            <tr>
+		                <td><label>Stock*</label></td>
+		                <td>
+		                    <input type="number" min="0" th:field="*{stock}">
+		                	<div class="field-validation-error" th:errors="*{stock}"></div>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td><label>On Order*</label></td>
+		                <td>
+		                    <input type="number" min="0" name="onOrder">
+		                	<div class="field-validation-error"></div>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td><label>Discontinue*</label></td>
+		                <td>
+		                    <input type="checkbox" name="discontinue">
+		                	<div class="field-validation-error"></div>
+		                </td>
+		            </tr>
+		            <tr>
+		                <td class="textarea-label"><label>Product Description</label></td>
+		                <td>
+		                	<textarea name="description"></textarea>
+		                	<div class="field-validation-error"></div>
+		                </td>
+		            </tr>
+				<tr>
+					<td><label>Discontinue*</label></td>
+					<td>
+						<input type="file" name="image" accept="image/jpg">
+					</td>
+				</tr>
+		        </tbody>
+		    </table>
+		    <button class="blue-button" type="submit">if(Insert or Update) Product</button>
+		</form>
+	</main>
+	<footer>
+		Copyrights &copy; 2021
+		<span class="author">Boby Widjaja</span>
+		All rights reserved.
+	</footer>
+</body>
+</html>

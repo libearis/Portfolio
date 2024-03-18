@@ -1,0 +1,47 @@
+@model ViewModels.Account.RegisterVM
+<div class="form-container-register">
+    <h1>Register Buyer</h1>
+    <form method="post" asp-action="RegisterBuyer">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>
+                    <input type="text" asp-for="Username">
+                    <span asp-validation-for="@Model.Username" class="popup-validation-error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" asp-for="Password">
+                    <span asp-validation-for="@Model.Password" class="popup-validation-error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td>
+                    <input type="password" asp-for="ConfirmPassword">
+                    <span asp-validation-for="@Model.ConfirmPassword" class="popup-validation-error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" asp-for="Name">
+                    <span asp-validation-for="@Model.Name" class="popup-validation-error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    <textarea id="" cols="23" rows="7" asp-for="Address"></textarea>
+                    <span asp-validation-for="@Model.Address" class="popup-validation-error"></span>
+                </td>
+            </tr>
+        </table>
+        <div class="button-flex">
+            <button type="submit" class="button-25">Register</button>
+            <button class="button-25" disabled="true"><a asp-action="Index">Back to login page</a></button>
+        </div>
+    </form>
+</div>

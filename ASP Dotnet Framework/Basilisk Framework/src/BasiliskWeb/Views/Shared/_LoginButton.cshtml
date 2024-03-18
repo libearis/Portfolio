@@ -1,0 +1,22 @@
+@using System.Security.Claims
+<div class="user">
+    @if(User.FindFirstValue(ClaimTypes.Role) == null)
+    {
+        <a asp-controller="Account" asp-action="Login" class="full-name">Login</a>
+        <span class="role">guest</span>
+    }
+    else
+    {
+        <a asp-controller="Account" asp-action="ChangePassword" asp-route-username="@User.FindFirstValue(ClaimTypes.Name)" class="full-name">@User.FindFirstValue(ClaimTypes.Name)</a>
+        <span class="role">@User.FindFirstValue(ClaimTypes.Role)</span>
+    }
+</div>
+@if(User.FindFirstValue(ClaimTypes.Role) != null)
+{
+    <div class="sign-out">
+        <form method="POST" asp-controller="Account" asp-action="Logout">
+            <input type="hidden" />
+            <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+        </form>
+    </div>
+}

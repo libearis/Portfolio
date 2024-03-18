@@ -1,0 +1,90 @@
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>Shipment</h3></a></span>
+}
+@{
+    Layout = "_Layout";
+}
+<div class="pop-up-detail">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Add New</h2>
+            <button id="close-detail">X</button>
+        </div>
+        <div id="detail-bio">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <input type="text" placeholder="Shipment Name" id="insert1">
+                        <span id="error1" class="popup-validation-error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td>
+                        <input type="number" placeholder="Price" id="insert2">
+                        <span id="error2" class="popup-validation-error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="checkbox" id="insert3"></td>
+                </tr>
+            </table>
+        <button id="tambah" class="button-25">Tambah</button>
+        <button id="edit" class="button-25">Edit</button>
+        </div>
+    </div>
+</div>
+<div class="pop-up-delete">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Delete</h2>
+            <button id="close-delete">X</button>
+        </div>
+        <div id="delete-text">
+            <h3>Yakin Mau Hapus Shipment ini?</h3>
+        <button id="delete" class="button-25">Hapus</button>
+        </div>
+    </div>
+</div>
+<div class="pop-up-service">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Stop Service</h2>
+            <button id="close-service">X</button>
+        </div>
+        <div id="stop-text">
+            <h3>Yakin mau Hentikan Service JNE?</h3>
+        <button id="stopservice" class="button-25">Hentikan Service</button>
+        </div>
+    </div>
+</div>
+
+<button id="firstbutton" class="button-25">Add New Shipment</button></a>
+<table>
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Service</th>
+        </tr>
+    </thead>
+    <tbody class="maintbody">
+
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">
+                <div class="tfoot-flex">
+                    <div>default</div>
+                    <div>
+                        
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<script src="~/JS/shipment.js"></script>

@@ -1,0 +1,102 @@
+@model History.IndexHistoryVM
+@using System.Security.Claims
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>History</h3></a></span>
+}
+@{
+    Layout = "_ContentLayout";
+}
+<div class="content-1">
+    <form method="get" asp-action="Index">
+        <table>
+            <tr>
+                <td>Seller</td>
+                <td>
+                    <select class="dropdown" asp-for="@Model.SellerId">
+                        <option value="">Semua Seller</option>
+                        @foreach(var seller in Model.Sellers)
+                        {
+                            <option value="@seller.Value">@seller.Text</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Buyer</td>
+                <td>
+                    <select class="dropdown" asp-for="@Model.BuyerId">
+                        <option value="">Semua Buyer</option>
+                        @foreach(var buyer in Model.Buyers)
+                        {
+                            <option value="@buyer.Value">@buyer.Text</option>
+                        }
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button class="button-25" id="search" type="submit">Search</button>
+    </form>
+</div>
+<div class="content-2">
+    <h2>List Products</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Seller</th>
+                <th>Buyer</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Shipment</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(Model.Histories.Count == 0)
+            {
+                <tr>
+                    <td colspan="7">Tidak ada transaksi</td>
+                </tr>
+            }
+            else
+            {
+                @foreach(var transaction in Model.Histories)
+                {
+                    <tr>
+                        <td>@transaction.Date</td>
+                        <td>@transaction.SellerName</td>
+                        <td>@transaction.BuyerName</td>
+                        <td>@transaction.ProductName</td>
+                        <td>@transaction.Quantity</td>
+                        <td>@transaction.ShipmentName</td>
+                        <td>@transaction.TotalPrice.ToString("c0")</td>
+                    </tr>
+                }
+            }
+        </tbody>
+        @if(Model.Histories.Count != 0)
+        {
+            <tfoot>
+                <tr>
+                    <td colspan="7">
+                        <div class="tfoot-flex">
+                            <div>
+                                Page @Model.Pagination.PageNumber of @Model.Pagination.TotalPages
+                            </div>
+                            <div>
+                                @for(int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                                {
+                                    <a asp-action="Index" asp-route-pageNumber="@pageNumber" 
+                                    asp-route-sellerId="@Model.SellerId" asp-route-buyerId="@Model.BuyerId">
+                                    <button class="button-25 pagenumber">@pageNumber</button>
+                                    </a>
+                                }
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        }
+    </table>
+    </div>
+</div>

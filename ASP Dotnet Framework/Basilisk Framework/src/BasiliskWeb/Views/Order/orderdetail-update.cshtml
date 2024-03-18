@@ -1,0 +1,57 @@
+@model Order.OrderDetailUpdateVM
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>ORDER OF @Model.InvoiceNumber / UPDATE DETAIL</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="../account/change-password-form.html" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post" class="upsert-form" asp-action="UpdateDetail">
+        <input type="hidden" />
+        <input type="hidden" />
+        <input type="hidden" />
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>Product*</label></td>
+                    <td>
+                        <select asp-for="@Model.ProductId">
+                            @foreach(var product in Model.Products)
+                            {
+                                <option value="@product.Id">@product.ProductName</option>
+                            }
+                        </select>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Quantity">Quantity*</label></td>
+                    <td>
+                        <input type="number" asp-for="@Model.Quantity">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Discount">Discount(%)*</label></td>
+                    <td>
+                        <input type="text" class="moneyConversion" asp-for="@Model.Discount">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit">Update Order Detail</button>
+    </form>
+</main>

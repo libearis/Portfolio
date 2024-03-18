@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/normalize.css" />
+    <link rel="stylesheet" href="~/css/font-awesome.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            @RenderSection("Breadcrumbs", false)
+            <div>
+                <a asp-controller="Home" asp-action="Index">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </div>
+                </a>
+                <a asp-controller="Author" asp-action="Index">
+                    <div>
+                        <i class="fa fa-user"></i>
+                        <span>Author</span>
+                    </div>
+                </a>
+                <a asp-controller="Category" asp-action="Index">
+                    <div>
+                        <i class="fa fa-book-open"></i>
+                        <span>Books</span>
+                    </div>
+                </a>
+                <a asp-controller="Customer" asp-action="Index">
+                    <div>
+                        <i class="fa fa-user-friends"></i>
+                        <span>Customers</span>
+                    </div>
+                </a>
+                <a asp-controller="Loan" asp-action="Index">
+                    <div>
+                        <i class="fa fa-bookmark"></i>
+                        <span>Loan</span>
+                    </div>
+                </a>
+            </div>
+        </nav>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+</body>
+</html>

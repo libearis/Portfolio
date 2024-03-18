@@ -1,0 +1,52 @@
+@model Delivery.DeliveryUpdateVM
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>DELIVERY INDEX / INSERT DELIVERY</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="../account/change-password-form.html" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post" class="upsert-form" asp-action="Update">
+        <input type="hidden" />
+        <input type="hidden" />
+        <table>
+            <tbody>
+                <tr>
+                    <td><label asp-for="@Model.CompanyName">Delivery's Company*</label></td>
+                    <td>
+                        <input type="text" id="companyName" asp-for="@Model.CompanyName">
+                        <div class="field-validation-error"></div>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Phone">Company's Phone</label></td>
+                    <td>
+                        <input type="tel" id="phone" asp-for="@Model.Phone">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label asp-for="@Model.Cost">Cost Per Delivery (Rp.)</label></td>
+                    <td>
+                        <input type="text" class="moneyConversion" id="cost" asp-for="@Model.Cost">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit">Insert Delivery</button>
+    </form>
+</main>

@@ -1,0 +1,67 @@
+@using System.Security.Claims
+<a asp-controller="Home" asp-action="Index">
+    <div>
+        <i class="fa fa-home"></i>
+        <span>Home</span>
+    </div>
+</a>
+
+@if(User.FindFirstValue(ClaimTypes.Role) == "Buyer")
+{
+    <a asp-controller="Buyer" asp-action="Index">
+        <div>
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </a>
+    <a asp-controller="Shop" asp-action="Index">
+        <div>
+            <i class="fa fa-shopping-bag"></i>
+            <span>Shop</span>
+        </div>
+    </a>
+    <a asp-controller="Cart" asp-action="Index">
+    <div>
+        <i class="fa fa-shopping-cart"></i>
+        <span>My Cart</span>
+    </div>
+    </a>
+}
+
+else if(User.FindFirstValue(ClaimTypes.Role) == "Seller")
+{
+    <a asp-controller="Seller" asp-action="Index">
+        <div>
+            <i class="fa fa-user"></i>
+            <span>Profile</span>
+        </div>
+    </a>
+    <a asp-controller="Merchandise" asp-action="Index">
+        <div>
+            <i class="fa fa-store"></i>
+            <span>Merchandise</span>
+        </div>
+    </a>
+}
+
+else
+{
+    <a asp-controller="Shipment" asp-action="Index">
+        <div>
+            <i class="fa fa-truck"></i>
+            <span>Shipment</span>
+        </div>
+    </a>
+    <a asp-controller="Admin" asp-action="Index">
+        <div>
+            <i class="fa fa-user-secret"></i>
+            <span>Admin</span>
+        </div>
+    </a>
+    <a asp-controller="History" asp-action="Index">
+        <div>
+            <i class="fa fa-history"></i>
+            <span>History</span>
+        </div>
+    </a>
+}

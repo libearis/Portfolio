@@ -1,0 +1,103 @@
+@model Merchandise.MerchandiseVM
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>Merchandise</h3></a></span>
+}
+@{
+    Layout = "_Layout";
+}
+<div class="pop-up-detail">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Product Detail</h2>
+            <button id="close-detail">X</button>
+        </div>
+        <div id="detail-bio">
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td id="info1">as</td>
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td id="info2">as</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td id="info3">as</td>
+                </tr>
+                <tr>
+                    <td>Price</td>
+                    <td id="info4">as</td>
+                </tr>
+                <tr>
+                    <td>Discontinue</td>
+                    <td id="info5">as</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<a asp-action="Insert"><button id="firstbutton" class="button-25">Add New Product</button></a>
+<table>
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Discontinue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model.Products.Count == 0)
+        {
+            <tr>
+                <td colspan="4">Merchandise is empty</td>
+            </tr>
+        }
+        else
+        {
+            @foreach(var product in Model.Products)
+            {
+                <tr>
+                    <td>
+                        @if(product.IsPurchased == false)
+                        {
+                            <a asp-action="Edit" asp-route-id="@product.Id"><button class="button-25">Edit</button></a>
+                            <a asp-action="Delete" asp-route-id="@product.Id"><button class="button-25">Delete</button></a>
+                        }
+                        <button id="detailbutton" class="button-25">Info</button>
+                        @if(product.Discontinue == false)
+                        {
+                            <a asp-action="Discontinue" asp-route-id="@product.Id"><button class="button-25">Discontinue</button></a>
+                        }
+                    </td>
+                    <td>@product.Name</td>
+                    <td>@product.CategoryName</td>
+                    <td>@(product.Discontinue == false?"No" : "Yes")</td>
+                </tr>
+            }
+        }
+    </tbody>
+    @if(Model.Products.Count != 0)
+    {
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <div class="tfoot-flex">
+                        <div>
+                            Page @Model.Pagination.PageNumber of @Model.Pagination.TotalPages
+                        </div>
+                        <div>
+                            @for(int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                            {
+                                <a asp-action="Index" asp-route-pageNumber="@pageNumber"><button class="button-25 pagenumber">@pageNumber</button></a>
+                            }
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+    }
+</table>
+<script src="~/JS/merchandise.js"></script>

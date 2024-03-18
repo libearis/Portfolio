@@ -1,0 +1,35 @@
+@model Shop.ProductVM
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>Merchandise > <a asp-action="Insert">Add Product</a></h3></a></span>
+}
+
+@{
+    Layout = "_Layout";
+}
+<h2>Delete this Product?</h2>
+<form method="post" asp-action="ConfirmDelete" asp-route-id="@Model.Id" class="upsert">
+    <table class="upsert">
+        <tr>
+            <td>Name</td>
+            <td><label>@Model.Name</label></td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td>@Model.CategoryName</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><label>@Model.Description</label></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><label>@Model.UnitPriceInt</label></td>
+        </tr>
+        <tr>
+            <td>Discontinue</td>
+            <td><input type="checkbox" asp-for="Discontinue" disabled="true"></td>
+        </tr>
+    </table>
+    <button class="button-25" type="submit"><a>Delete</a></button>
+    <button class="button-25" type="submit"><a asp-action="Index">Cancel</a></button>
+</form>

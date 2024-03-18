@@ -1,0 +1,26 @@
+@model Cart.TransactionVM
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>My Cart > <a asp-action="PurchaseAll">Purchase All</a></h3></a></span>
+}
+@{
+    Layout = "_Layout";
+}
+<table>
+    <tbody>
+        <tr>
+            <td>Total Harga untuk dibayar:</td>
+            <td>@Model.TotalPrice.ToString("c0")</td>
+        </tr>
+        <tr>
+            <td>Saldo saat ini:</td>
+            <td>@Model.CurrentBalance.ToString("c0")</td>
+        </tr>
+        <tr>
+            <td>Saldo yang tersisa setelah transaksi:</td>
+            <td>@Model.RemainingBalance.ToString("c0")</td>
+        </tr>
+    </tbody>
+</table>
+<form method="post" asp-action="PurchaseAll" asp-route-remainingBalance="@Model.RemainingBalance">
+    <button id="pay" class="button-25">Bayar</button>
+</form>

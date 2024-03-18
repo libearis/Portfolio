@@ -1,0 +1,25 @@
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>ORDER INDEX / DELETE ORDER</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="../account/change-password-form.html" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="fail-container">
+        <p>There are Order Detail(s) found which are catagorized by this Order.</p>
+        <p>You can't delete this Order while those Order Detail(s) is/are dependent to this Order.</p>
+    </div>
+    <a class="blue-button" asp-action="Index">Back to index</a>
+</main>

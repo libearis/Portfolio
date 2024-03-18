@@ -1,0 +1,87 @@
+@model Category.IndexCategoryVM
+<div class="searchby">
+    <label for="NameSearch">Search by</label>
+    <form method="get" asp-action="Index">
+        <span>Name </span>
+        <input type="text" id="search1">
+        <button type="submit" id="search-button" class="button-25">Search</button>
+    </form>
+    <button class="add-category button-25" id="insert-new">Add New Category</button>
+</div>
+<form method="get" class="insert-new">
+    <div class="popup">
+        <div class="header-flex">
+            <h2>Insert New Category</h2>
+            <button id="close-form">X</button>
+        </div>
+        <table>
+            <tr>
+                <td><span>Category Name*</span></td>
+                <td>
+                    <input type="text" id="insert-1">
+                    <div class="field-validation-error"><span asp-validation-for="@Model.Insert.CategoryName"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><span>Floor*</span></td>
+                <td><input type="text" id="insert-2"></td>
+            </tr>
+            <tr>
+                <td><span>Isle*</span></td>
+                <td><input type="text" id="insert-3"></td>
+            </tr>
+            <tr>
+                <td><span>Bay*</span></td>
+                <td><input type="text" id="insert-4"></td>
+            </tr>
+        </table>
+        <div>
+            <button type="submit" class="button-25" id="submit-insertcategory">Insert New Category</button>
+        </div>
+    </div>
+</form>
+<table class="tablecontent">
+    <thead>
+        <th>Action</th>
+        <th>Category</th>
+        <th>Floor</th>
+        <th>Isle</th>
+        <th>Bay</th>
+        <th>Total Books</th>
+    </thead>
+    <tbody class="main-tbody">
+        @* @{
+            foreach(var category in Model.Categories)
+            {
+                <tr>
+                    <td class="button-action">
+                        <a asp-controller="Book" asp-action="Index" asp-route-categoryName="@category.Name"><button>Books</button></a>
+                        <a asp-action="Update" asp-route-name="@category.Name"><button>Edit</button></a>
+                        <a asp-action="Delete" asp-route-name="@category.Name"><button>Delete</button></a>
+                    </td>
+                    <td>@category.Name</td>
+                    <td>@category.Floor</td>
+                    <td>@category.Isle</td>
+                    <td>@category.Bay</td>
+                    <td>@category.TotalBook</td>
+                </tr>
+            }
+        } *@
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6">
+                <div class="tfoot-flex">
+                    <div>default</div>
+                    <div>
+                        @* @for(int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                        {
+                            <a asp-action="Index" asp-action="Index" asp-route-pageNumber="@pageNumber" asp-route-name="@Model.Name"><button class="button-25">@pageNumber</button></a>
+                        } *@
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<script src="~/JS/category.js"></script>

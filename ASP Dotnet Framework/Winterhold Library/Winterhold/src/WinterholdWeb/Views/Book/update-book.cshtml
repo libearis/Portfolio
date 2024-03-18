@@ -1,0 +1,67 @@
+@model Book.UpdateBookVM
+<form method="post" asp-action="Update" asp-route-Code="@Model.Code">
+    <h1>Update @Model.Title</h1>
+    <input type="hidden"/>
+    <input type="hidden"/>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Code</label></td>
+                <td>
+                    <label>@Model.Code</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Title*</label></td>
+                <td>
+                    <input type="text" asp-for="@Model.Title">
+                    <div class="field-validation-error"><span asp-validation-for="Title"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Category</label></td>
+                <td>
+                    <label>@Model.CategoryName</label>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Author*</label></td>
+                <td>
+                    <select asp-for="@Model.AuthorId">
+                        <option>Select Author</option>
+                        @foreach(var author in Model.Authors)
+                        {
+                            <option value="@author.Value">@author.Text</option>
+                        }
+                    </select>
+                    <div class="field-validation-error"><span asp-validation-for="AuthorId"></span></div> 
+                </td>
+            </tr>
+            <tr>
+                <td><label>Release Date</label></td>
+                <td>
+                    <input type="date" asp-for="@Model.ReleaseDate">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Total Page</label></td>
+                <td>
+                    <input type="number" asp-for="@Model.TotalPage">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label"><label>Summary</label></td>
+                <td>		                    
+                    <textarea id="address" cols="40" rows="5" asp-for="@Model.Summary"></textarea>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="button-25">Update @Model.Title</button>
+    <button class="button-25"><a asp-action="Index" asp-route-categoryName="@Model.CategoryName">Back to Index</a></button>
+</form>

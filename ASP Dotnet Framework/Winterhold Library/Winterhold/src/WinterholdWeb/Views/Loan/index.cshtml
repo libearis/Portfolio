@@ -1,0 +1,158 @@
+<div class="searchby-book">
+    <div method="get" class="detail-loan">
+        <div class="popup">
+            <div class="header-flex">
+                <h2>Loan Detail</h2>
+                <button id="close-form">X</button>
+            </div>
+            <div class="loan-detail-flex">
+                <div id="book-detail">
+                    <h2>Book Info</h2>
+                    <table>
+                        <tr>
+                            <td>Title</td>
+                            <td id="info-book1">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Category</td>
+                            <td id="info-book2">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Author</td>
+                            <td id="info-book3">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Floor</td>
+                            <td id="info-book4">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Isle</td>
+                            <td id="info-book5">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Bay</td>
+                            <td id="info-book6">A0124</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="customer-detail">
+                    <h2>Customer Info</h2>
+                    <table>
+                        <tr>
+                            <td>Membership Number</td>
+                            <td id="info-customer1">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Full Name</td>
+                            <td id="info-customer2">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td id="info-customer3">A0124</td>
+                        </tr>
+                        <tr>
+                            <td>Membership Expire Date</td>
+                            <td id="info-customer4">A0124</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div method="get" class="insert-new">
+        <div class="popup">
+            <div class="header-flex">
+                <h2>Insert New Loan</h2>
+                <button id="close-form">X</button>
+            </div>
+            <div id="customer-bio">
+                <table>
+                    <tr>
+                        <td>Customer *</td>
+                        <td><select id="input1">
+                            <option value="">Select Customer</option>
+                        </select><span class="validation-customer" id="validation-error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Book *</td>
+                        <td><select id="input2">
+                            <option value="">Select Book</option>
+                        </select><span class="validation-book" id="validation-error"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Loan Date *</td>
+                        <td><input type="date" id="input3"></td>
+                    </tr>
+                    <tr>
+                        <td>Note</td>
+                        <td><textarea id="input4" cols="30" rows="5"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+        <button class="button-25" id="submitinsert-new">Submit</button>
+        </div>
+    </div>
+    <form method="get" asp-action="Index">
+    <label>Search by</label>
+        <table>
+            <tr>
+                <td><span>Book Title</span></td>
+                <td><input type="text" id="search1"></td>
+            </tr>
+            <tr>
+                <td><span>Customer Name</span></td>
+                <td><input type="text" id="search2"></td>
+            </tr>
+        </table>
+        <input type="checkbox" id="available"> 
+        <label for="available">Passed Due Date</label>
+        <div>
+            <button type="submit" id="search-button" class="button-25">Search</button>
+        </div>
+    </form>
+    <p></p>
+    <button class="add-loan button-25">New Loan</button>
+</div>
+<table class="tablecontent">
+    <thead>
+        <th>Action</th>
+        <th>Book Title</th>
+        <th>Customer Name</th>
+        <th>Loan Date</th>
+        <th>Due Date</th>
+        <th>Return Date</th>
+    </thead>
+    <tbody class="main-tbody">
+        @* @{
+            foreach(var customer in Model.Customers)
+            {
+                <tr>
+                    <td class="button-action">
+                        <a asp-action="Update" asp-route-memberNumber="@customer.MembershipNumber"><button class="button-25">Edit</button></a>
+                        <a asp-action="Delete" asp-route-memberNumber="@customer.MembershipNumber"><button class="button-25">Delete</button></a>
+                        <a asp-action="Extend" asp-route-memberNumber="@customer.MembershipNumber"><button class="button-25">Extend</button></a>
+                    </td>
+                    <td><a id="view-member" asp-action="Index" asp-route-memberNumber="@customer.MembershipNumber">@customer.MembershipNumber</a></td>
+                    <td>@customer.FirstName @customer.LastName</td>
+                    <td>@customer.MembershipExpireDate.ToString("dd/MM/yyyy")</td>
+                </tr>
+            }
+        } *@
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="6">
+                <div class="tfoot-flex">
+                    <div>default</div>
+                    <div>
+                        @* @for(int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                        {
+                            <a asp-action="Index" asp-action="Index" asp-route-pageNumber="@pageNumber" asp-route-customerNumber="@Model.MemberNumber" asp-route-customerName="@Model.CustomerName" asp-route-isExpired="@Model.IsExpired"><button class="button-25">@pageNumber</button></a>
+                        } *@
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+<script src="~/JS/loan.js"></script>

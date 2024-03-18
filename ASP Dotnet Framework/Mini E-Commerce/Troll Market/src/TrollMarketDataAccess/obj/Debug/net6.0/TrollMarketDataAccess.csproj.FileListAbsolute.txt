@@ -1,0 +1,14 @@
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\bin\Debug\net6.0\TrollMarketDataAccess.deps.json
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\bin\Debug\net6.0\TrollMarketDataAccess.runtimeconfig.json
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\bin\Debug\net6.0\TrollMarketDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\bin\Debug\net6.0\TrollMarketDataAccess.pdb
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.csproj.AssemblyReference.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.AssemblyInfoInputs.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.AssemblyInfo.cs
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.csproj.CoreCompileInputs.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\refint\TrollMarketDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.pdb
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\TrollMarketDataAccess.genruntimeconfig.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Final Exam_BC42\Troll Market\src\TrollMarketDataAccess\obj\Debug\net6.0\ref\TrollMarketDataAccess.dll

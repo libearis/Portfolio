@@ -1,0 +1,45 @@
+@model Category.CategoryInsertVM
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href=""><i class="fas fa-bars"></i></a>
+        <span>CATEGORY INDEX / INSERT CATEGORY</span>
+    </div>
+    <div class="user-wrapper">
+        <div class="user">
+            <a href="" class="full-name">anonymous</a>
+            <span class="role">guest</span>
+        </div>
+        <div class="sign-out">
+            <form action="" method="POST">
+                <input type="hidden" />
+                <button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+            </form>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post" class="upsert-form">
+        <input type="hidden" />
+        <input type="hidden" />
+        <table>
+            <tbody>
+                <tr>
+                    <td><label asp-for="@Model.CategoryName">Category Name*</label></td>
+                    <td>
+                        <input type="text" asp-for="@Model.CategoryName">
+                        <div class="field-validation-error"><span asp-validation-for="@Model.CategoryName"></span></div>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label asp-for="@Model.CategoryDescription">Category Description</label></td>
+                    <td>
+                        <textarea asp-for="@Model.CategoryDescription"></textarea>
+                        <div class="field-validation-error"><span asp-validation-for="@Model.CategoryDescription"></span></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit">Insert New Category</button>
+    </form>
+</main>

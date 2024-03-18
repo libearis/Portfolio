@@ -1,0 +1,15 @@
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\bin\Debug\net6.0\BasiliskBusiness.deps.json
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\bin\Debug\net6.0\BasiliskBusiness.dll
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\bin\Debug\net6.0\BasiliskBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\bin\Debug\net6.0\TradeOfBasiliskDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\bin\Debug\net6.0\TradeOfBasiliskDataAccess.pdb
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.csproj.AssemblyReference.cache
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.AssemblyInfoInputs.cache
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.AssemblyInfo.cs
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.csproj.CoreCompileInputs.cache
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.csproj.CopyComplete
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.dll
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\refint\BasiliskBusiness.dll
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\BasiliskBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Basilisk Framework\src\BasiliskBusiness\obj\Debug\net6.0\ref\BasiliskBusiness.dll

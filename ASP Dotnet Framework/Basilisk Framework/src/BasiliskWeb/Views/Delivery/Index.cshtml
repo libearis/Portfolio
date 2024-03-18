@@ -1,0 +1,61 @@
+@model Delivery.IndexViewModel
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>DELIVERY INDEX</span>
+    </div>
+    <div class="user-wrapper">
+        <partial name="_LoginButton"></partial>
+    </div>
+</header>
+<main>
+    <div class="grid-container delivery-index">
+        <form method="get" class="filter" asp-action="Index">
+            <input type="text" asp-for="@Model.CompanyName" placeholder="Company Name...">
+            <button class="blue-button" type="submit">Search</button>
+        </form>
+        <a class="blue-button create-button" asp-action="Insert">Insert New Delivery</a>
+        <table>
+            <thead>
+                <th>Action</th>
+                <th>Company Name</th>
+                <th>Phone</th>
+                <th>Cost</th>
+            </thead>
+            <tbody>
+                @{
+                    foreach(var delivery in Model.Deliveries)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-action="Update" asp-route-id="@delivery.Id" class="blue-button update-button">Edit</a>
+                                <a asp-action="HardDelete" asp-route-id="@delivery.Id" class="blue-button delete-button">Delete</a>
+                            </td>
+                            <td>@delivery.CompanyName</td>
+                            <td>@delivery.Phone</td>
+                            <td>@delivery.Cost</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        @if(Model != null)
+                        {
+                            <div class="pagination">
+                                <div>Page @Model.Pagination.PageNumber of @Model.Pagination.TotalPages</div>
+                                <div>
+                                @for(int pageNumber = 1; pageNumber <= Model.Pagination.TotalPages; pageNumber++)
+                                {
+                                    <a asp-action="Index" asp-route-pageNumber="@pageNumber" asp-route-companyName="@Model.CompanyName">@pageNumber</a>
+                                }
+                                </div>
+                            </div>
+                        }
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</main>

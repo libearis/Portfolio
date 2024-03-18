@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basilisk</title>
+	<link rel="icon" type="image/ico" href="../../favicon.ico"/>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/font-awesome.css" />
+    <link rel="stylesheet" href="../../css/site.css" />
+	<link rel="stylesheet" href="../../css/authorization.css" />
+	<link rel="stylesheet" href="../../css/responsive.css" />
+</head>
+<body class="authentication-body">
+    @RenderSection("Breadcrumbs", false)
+    <div class="authentication-wrapper">
+        <header class="company-logo">
+			<img src="../../image/logo.png" alt="Basilisk" />
+			<h1>
+				Trade of <span class="bold">basilisk</span>
+			</h1>
+		</header>
+    </div>
+    @RenderBody()
+</body>
+</html>

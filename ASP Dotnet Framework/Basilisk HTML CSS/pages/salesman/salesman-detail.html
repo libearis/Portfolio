@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basilisk</title>
+	<link rel="icon" type="image/ico" href="../../favicon.ico"/>
+    <link rel="stylesheet" href="../../css/normalize.css" />
+    <link rel="stylesheet" href="../../css/font-awesome.css" />
+    <link rel="stylesheet" href="../../css/site.css" />
+	<link rel="stylesheet" href="../../css/authorization.css" />
+	<link rel="stylesheet" href="../../css/responsive.css" />
+    <script src="../../js/jquery-3.6.0.js"></script>
+	<script src="../../js/apexcharts.js"></script>
+	<script src="../../js/site.js" defer></script>
+</head>
+<body class="main-body">
+	<nav>
+		<div class="company-logo">
+			<img src="../../image/logo.png" alt="Basilisk" />
+			<h1>
+				Trade of <span class="bold">basilisk</span>
+			</h1>
+		</div>
+		<a class="menu dashboard" href="../dashboard/dashboard-index.html">
+			<i class="fas fa-chart-pie"></i>
+			<span>Dashboard</span>
+		</a>
+		<a class="menu category" href="../category/category-index.html">
+			<i class="fas fa-th"></i>
+			<span>Category</span>
+		</a>
+		<a class="menu supplier" href="../supplier/supplier-index.html">
+			<i class="fab fa-amazon"></i>
+			<span>Supplier</span>
+		</a>
+		<a class="menu product" href="../product/product-index.html">
+			<i class="fas fa-box-open"></i>
+			<span>Product</span>
+		</a>
+		<a class="menu region" href="../region/region-index.html">
+			<i class="fas fa-map-marked-alt"></i>
+			<span>Region</span>
+		</a>
+		<a class="menu customer" href="../customer/customer-index.html">
+			<i class="fas fa-users"></i>
+			<span>Customer</span>
+		</a>
+		<a class="menu delivery" href="../delivery/delivery-index.html">
+			<i class="fas fa-truck-moving"></i>
+			<span>Delivery</span>
+		</a>
+		<a class="menu salesman" href="salesman-index.html">
+			<i class="fas fa-user-tie"></i>
+			<span>Salesman</span>
+		</a>
+		<a class="menu order" href="../order/order-index.html">
+			<i class="fas fa-file-invoice-dollar"></i>
+			<span>Order</span>
+		</a>
+		<a class="menu api" href="javascript:;">
+			<i class="fas fa-server"></i>
+			<span>API Doc</span>
+		</a>
+	</nav>
+	<header>
+		<div class="bread-crumbs">
+			<a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+			<span> SALESMAN INDEX / REGION OF GALUH RAJATA</span>
+		</div>
+		<div class="user-wrapper">
+			<div class="user">
+				<a href="../account/change-password-form.html" class="full-name">anonymous</a>
+				<span class="role">guest</span>
+			</div>
+			<div class="sign-out">
+				<form action="" method="POST">
+					<input type="hidden" />
+					<button type="submit"><i class="fas fa-sign-out-alt"></i></button>
+				</form>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="grid-container salesman-detail">
+			<section class="header-info">
+		        <div>Employee Number: <span>J101</span></div>
+		        <div>Full Name: <span>Galuh Rajata</span></div>
+		    </section>
+		    <form method="get" class="filter" action="">
+		    	<input type="hidden" name="employeeNumber">
+		        <input type="text" name="city" placeholder="Region Name...">
+		        <button class="blue-button" type="submit">Search</button>
+		    </form>
+		    <a class="blue-button create-button" 
+		    	href="salesman-detail-form.html">Assign New Region</a>
+			<table>
+				<thead>
+					<th>Action</th>
+					<th>City</th>
+					<th>Remark</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="javascript:;"
+								class="blue-button delete-button">Delete</a>
+						</td>
+						<td>Tangerang</td>
+						<td>No Store or Office (Employee Allowance)</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="javascript:;"
+								class="blue-button delete-button">Delete</a>
+						</td>
+						<td>Bekasi</td>
+						<td>No Store or Office (No Allowance)</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="javascript:;"
+								class="blue-button delete-button">Delete</a>
+						</td>
+						<td>Bogor</td>
+						<td>2 Warehouse (No Allowance)</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<div class="pagination">
+								<div>page 1 of 1</div>
+								<div>
+									<a href="javascript:;" class="number">1</a>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</main>
+	<footer>
+		Copyrights &copy; 2021
+		<span class="author">Boby Widjaja</span>
+		All rights reserved.
+	</footer>
+</body>
+</html>

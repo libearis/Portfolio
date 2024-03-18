@@ -1,0 +1,30 @@
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.deps.json
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdDataAccess.pdb
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.AssemblyReference.cache
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.AssemblyInfoInputs.cache
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.AssemblyInfo.cs
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.CoreCompileInputs.cache
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.CopyComplete
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\refint\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\ref\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.deps.json
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdDataAccess.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\bin\Debug\net6.0\WinterholdDataAccess.pdb
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.AssemblyReference.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.AssemblyInfoInputs.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.AssemblyInfo.cs
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.CoreCompileInputs.cache
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.csproj.CopyComplete
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\refint\WinterholdBusiness.dll
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\WinterholdBusiness.pdb
+C:\Bootcamp Indocyber\Framework\Danny Liven Siswoyo_Mid Exam_BC42\Winterhold\src\WinterholdBusiness\obj\Debug\net6.0\ref\WinterholdBusiness.dll

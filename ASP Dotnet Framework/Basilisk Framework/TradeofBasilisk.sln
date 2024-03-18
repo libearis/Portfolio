@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeOfBasilisk", "src\TradeOfBasilisk\TradeOfBasilisk.csproj", "{503F4AED-044A-4419-A6FD-520D7A92D009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeOfBasiliskDataAccess", "src\TradeOfBasiliskDataAccess\TradeOfBasiliskDataAccess.csproj", "{5F15E98D-5AAA-4939-AA57-74D37DE56F03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasiliskWeb", "src\BasiliskWeb\BasiliskWeb.csproj", "{15022302-F9EB-4D63-8EC1-2012F42FD2A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasiliskBusiness", "src\BasiliskBusiness\BasiliskBusiness.csproj", "{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasiliskAPI", "src\BasiliskAPI\BasiliskAPI.csproj", "{F5095597-2509-40CC-9143-58C15B26B48F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{503F4AED-044A-4419-A6FD-520D7A92D009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503F4AED-044A-4419-A6FD-520D7A92D009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503F4AED-044A-4419-A6FD-520D7A92D009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503F4AED-044A-4419-A6FD-520D7A92D009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F15E98D-5AAA-4939-AA57-74D37DE56F03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F15E98D-5AAA-4939-AA57-74D37DE56F03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F15E98D-5AAA-4939-AA57-74D37DE56F03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F15E98D-5AAA-4939-AA57-74D37DE56F03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15022302-F9EB-4D63-8EC1-2012F42FD2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15022302-F9EB-4D63-8EC1-2012F42FD2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15022302-F9EB-4D63-8EC1-2012F42FD2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15022302-F9EB-4D63-8EC1-2012F42FD2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5095597-2509-40CC-9143-58C15B26B48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5095597-2509-40CC-9143-58C15B26B48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5095597-2509-40CC-9143-58C15B26B48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5095597-2509-40CC-9143-58C15B26B48F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{503F4AED-044A-4419-A6FD-520D7A92D009} = {FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}
+		{5F15E98D-5AAA-4939-AA57-74D37DE56F03} = {FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}
+		{15022302-F9EB-4D63-8EC1-2012F42FD2A1} = {FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}
+		{A3D78B00-0ADC-4AE7-AC9D-A3F43308EB00} = {FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}
+		{F5095597-2509-40CC-9143-58C15B26B48F} = {FCCFD6F7-E804-4827-AEBA-3CCDAFFEA28A}
+	EndGlobalSection
+EndGlobal

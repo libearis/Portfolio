@@ -1,0 +1,349 @@
+body{
+    margin: 0;
+}
+
+.main-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 40px 1fr;
+    grid-template-areas: 
+    "nav"
+    "main";
+}
+
+nav{
+    grid-area: nav;
+    border-bottom: 3px solid #7ed6df;
+    background-color: #1dd1a1;
+    height: 40px;
+}
+
+nav div{
+    gap: 15px;
+    display: flex;
+    height: 100%;
+}
+
+nav div div{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+
+nav a:first-child{
+    margin-left: 10px;
+}
+
+nav a:hover{
+    background-color: #10ac84;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.home-description{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+main{
+    padding-top: 10px;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+    grid-area: main;
+    display: grid;
+    width: 90vw;
+    height: 90vh;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: 
+    "searchby"
+    "tablecontent";
+    
+    gap: 30px;
+}
+
+main form td{
+    line-height: 40px;
+}
+
+.table-detail{
+    width: 60vw;
+    line-height: 35px;
+}
+
+
+.field-validation-error {
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    background-color: #10ac84;
+    vertical-align: middle;
+    line-height: 30px;
+    padding: 0 12px;
+    border-radius: 4px;
+    margin-left:5px;
+}
+
+.searchby{
+    padding-top: 10px;
+    grid-area: searchby;
+    width: 30%;
+}
+
+.searchby label{
+    padding-left: 10px;
+    -webkit-text-stroke: 1px #00d2d3;
+}
+
+.searchby form{
+    background-color: #c7ecee;
+    border: 2px solid #7ed6df;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.searchby-book form{
+    margin-top: 20px;
+    background-color: #c7ecee;
+    border: 2px solid #7ed6df;
+    height: 200px;
+    width: 50%;
+    padding-top: 15px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.searchby-book form div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+#insert-new{
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.tablecontent{
+    color: black;
+    grid-area: tablecontent;
+    border: 2px solid #7ed6df;
+    height: 50px;
+    text-align: left;
+}
+
+.tablecontent tr{
+    height: 50px;
+}
+
+.tablecontent th, .tablecontent tfoot td{
+    background-color: #10ac84;
+    padding-left: 10px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.tablecontent td{
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.tablecontent .button-action{
+    width: 200px;
+}
+
+.tablecontent tr:nth-child(even){
+    background-color: #dff9fb;
+}
+
+.tablecontent tr:nth-child(odd){
+    background-color: #c7ecee;
+}
+
+#customer-bio, #customer-bio tr{
+    width: 100%;
+}
+
+#customer-bio table{
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#customer-bio table td:last-child{
+    padding-left: 20px;
+}
+
+#insert-form tr td:last-child{
+    padding-left: 50px;
+}
+
+.tfoot-flex{
+    font-size: 15px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.button-25 {
+    color: white;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button-25 a{
+    color: white;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.insert-new{
+    visibility: hidden;
+    position: fixed;
+}
+
+.insert-new-active{
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.insert-new-active .popup{
+    z-index: 1;
+    background-color: #1dd1a1;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup .header-flex{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup .header-flex button{
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.detail-loan{
+    visibility: hidden;
+    position: fixed;
+}
+
+.detail-loan-active{
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-loan-active .popup{
+    z-index: 1;
+    background-color: #1dd1a1;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup .header-flex{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup .header-flex button{
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.loan-detail-flex{
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 40px;
+}
+
+.loan-detail-flex div{
+    display: flex;
+    box-sizing: border-box;
+    width: 300px;
+    height: 100%;
+    border: 2px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loan-detail-flex table{
+    width: 100%;
+}
+
+.loan-detail-flex table tr{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+#customer-detail h2{
+    margin-top: 20px;
+}
+
+#validation-error{
+    color:  red;
+    font-size: 12px;
+}

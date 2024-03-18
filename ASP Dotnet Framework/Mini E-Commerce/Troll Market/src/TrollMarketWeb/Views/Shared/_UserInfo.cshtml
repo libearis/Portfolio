@@ -1,0 +1,4 @@
+@using System.Security.Claims
+<span>Welcome, @User.FindFirstValue(ClaimTypes.Name)</span>
+<button class="button-25"><a asp-controller="Account" asp-action="Logout">Sign Out</a></button>
+<script src="~/JS/logout.js"></script>

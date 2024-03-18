@@ -1,0 +1,22 @@
+@model ViewModels.Account.LoginVM
+<form method="post" asp-action="Login">
+    <div class="form-container">
+        <h1>Login</h1>
+        <input type="text" placeholder="Username..." id="insert1" asp-for="Username">
+        <span class="popup-validation-error" asp-validation-for="Username"></span>
+        <input type="password" placeholder="Password..." id="insert2" asp-for="Password">
+        <span class="popup-validation-error" asp-validation-for="Password"></span>
+        <select asp-for="Role">
+            <option value="Admin">Admin</option>
+            <option value="Buyer">Buyer</option>
+            <option value="Seller">Seller</option>
+        </select>
+        <button type="submit" id="submit" class="button-25">Sign In</button>
+        <span class="field-validation-error">@ViewBag.Message</span>
+    </div>
+</form>
+
+<a asp-action="RegisterBuyer">Register as Buyer</a>
+<a asp-action="RegisterSeller">Register as Seller</a>
+
+<script src="~/JS/login.js"></script>

@@ -1,0 +1,61 @@
+@model Author.InsertAuthorVM
+<form method="post" asp-action="Insert">
+    <h1>Insert New Author</h1>
+    <input type="hidden"/>
+    <input type="hidden"/>
+    <table>
+        <tbody>
+            <tr>
+                <td><label>Title*</label></td>
+                <td>
+                    <input type="text" asp-for="Title">
+                    <div class="field-validation-error"><span asp-validation-for="Title"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>First Name*</label></td>
+                <td>
+                    <input type="text" asp-for="FirstName">
+                    <div class="field-validation-error"><span asp-validation-for="FirstName"></span></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Last Name</label></td>
+                <td>
+                    <input type="text" asp-for="LastName">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Birth Date*</label></td>
+                <td>
+                    <input type="date" asp-for="BirthDate">
+                    <div class="field-validation-error"><span asp-validation-for="BirthDate"></span></div> 
+                </td>
+            </tr>
+            <tr>
+                <td><label>Decease Date</label></td>
+                <td>
+                    <input type="date" asp-for="DeceasedDate">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Education</label></td>
+                <td>
+                    <input type="text" asp-for="Education">
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="textarea-label"><label>Summary</label></td>
+                <td>		                    
+                    <textarea id="address" cols="40" rows="5" asp-for="Summary"></textarea>
+                    <div class="field-validation-error"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit" class="button-25">Insert New Author</button>
+    <button class="button-25"><a asp-action="Index">Back to Index</a></button>
+</form>

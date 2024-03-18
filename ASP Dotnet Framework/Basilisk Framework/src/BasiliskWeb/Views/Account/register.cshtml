@@ -1,0 +1,34 @@
+@{
+	Layout = "_login-register";
+}
+@model Account.RegisterVM
+<div class="authentication-wrapper">
+	<main>
+		<h1>Sign Up</h1>
+		<form method="post" asp-action="Register">
+			<input type="hidden" />
+			<div class="field-validation-error"></div>
+			<input type="text" asp-for="Username" placeholder="Username">
+			<div class="field-validation-error"></div>
+			<input type="password" asp-for="Password" placeholder="Password">
+			<div class="field-validation-error"></div>				
+			<input type="password" asp-for="ConfirmPassword" placeholder="Confirm Password">
+			<div class="field-validation-error"></div>	
+			<select asp-for="@Model.Role">
+            <option value="">No Specific Role</option>
+			@if(Model != null)
+			{
+				foreach(var role in Model.Roles)
+				{
+					<option value="@role.Value">@role.Text</option>
+				}
+			}
+			</select>
+			<div class="field-validation-error" th:errors="*{role}"></div>
+			<button type="submit">sign up</button>
+		</form>
+		<div class="link-container">
+			<a asp-action="Login">Click here to login</a>
+		</div>
+	</main>
+</div>

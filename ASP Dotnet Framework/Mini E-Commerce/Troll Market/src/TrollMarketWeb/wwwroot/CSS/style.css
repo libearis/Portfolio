@@ -1,0 +1,274 @@
+body{
+    background-color: #227093;
+    margin: 0;
+}
+
+.main-container{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 70px 50px 50px 400px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "headerpage"
+    "main";
+
+    gap: 10px;
+    margin: 10px 20px;
+}
+
+header,nav,.header-page,main{
+    border: 2px solid black;
+    background-color: #1dd1a1;
+    padding: 0 20px;
+}
+
+header{
+    grid-area: header;   
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    grid-area: nav;
+    height: 40px;
+}
+
+nav div{
+    gap: 15px;
+    display: flex;
+    height: 100%;
+}
+
+nav div div{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    height: 100%;
+}
+
+nav a:hover{
+    background-color: #10ac84;
+    transition: 0.5s;
+    opacity: 0.3;
+}
+
+.header-page{
+    grid-area: headerpage;
+}
+
+.header-page div{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    grid-area: main;
+}
+
+.home-description{
+    padding-left: 80px;
+    height: 100%;
+}
+
+.field-validation-error {
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    background-color: #c0392b;
+    vertical-align: middle;
+    line-height: 30px;
+    padding: 0 12px;
+    border-radius: 4px;
+    margin-left:5px;
+}
+
+.popup-validation-error {
+    color: red;
+    font-size: 12px;
+}
+
+table{
+    margin-top: 30px;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+table th, tfoot td{
+    background-color: #10ac84;
+}
+
+table tr:nth-child(odd){
+    background-color: #c7ecee;
+}
+
+table tr:nth-child(even){
+    background-color: #dff9fb;
+}
+
+.tfoot-flex{
+    font-size: 15px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#firstbutton{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#pay{
+    margin-top: 50px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.upsert{
+    width: 80%;
+    height: 80%;
+    margin-bottom: 30px;
+}
+
+form .upsert tr td{
+    background-color: #1dd1a1;
+    text-align: start;
+}
+
+.pop-up-detail, .pop-up-delete, .pop-up-service{
+    visibility: hidden;
+    position: fixed;
+}
+
+.pop-up-detail-active, .pop-up-delete-active, .pop-up-service-active{
+    visibility: visible;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.pop-up-detail-active .popup, .pop-up-delete .popup, .pop-up-service .popup{
+    z-index: 1;
+    background-color: #81ecec;
+    margin-right: 100px;
+    margin-bottom: 100px;
+
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up-delete .popup, .pop-up-service .popup{
+    height: 30%;
+}
+
+#detail-bio, #detail-bio tr{
+    width: 90%;
+}
+
+#detail-bio table{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: start;
+}
+
+#detail-bio table td:last-child{
+    padding-left: 80px;
+}
+
+#detail-bio table tr:nth-child(odd), #detail-bio table tr:nth-child(even){
+    background-color: #81ecec;
+}
+
+.popup .header-flex{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup .header-flex button{
+    color: white;
+    font-size: 15px;
+    background-color: red;
+    border-radius: 100px;
+}
+
+.admin table{
+    width: 60%;
+    text-align: start;
+}
+
+.admin  table tr:nth-child(odd), .admin table tr:nth-child(even){
+    background-color: #1dd1a1;
+}
+
+#saveadmin{
+    margin-top: 30px;
+    width: 200px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.button-25 {
+    color: #f7f1e3;
+    background-color: #20bf6b;
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.button-25 a{
+    color: white;
+}
+
+.button-25:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+.button-25:active {
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+#tambah, #edit{
+    width: 100%;
+}
+
+#delete, #stopservice{
+    width: 150px;
+}
+
+#delete-text, #stop-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#gototopup{
+    text-decoration: underline;
+    color: blue;
+}

@@ -1,0 +1,58 @@
+@model Author.IndexAuthorBooksVM
+<div class="searchby">
+    <button type="button" class="add-author button-25">
+        <a class="add-author" asp-action="Index">Back to Author Index</a>
+    </button>
+    <table class="table-detail">
+        <tbody>
+            <tr>
+                <td>Name</td>
+                <td>@Model.Author.Title . @Model.Author.FirstName @Model.Author.LastName</td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td>@Model.Author.BirthDate.ToString("dd MMMM yyyy")</td>
+            </tr>
+            <tr>
+                <td>Decease Date</td>
+                <td>@(Model.Author.DeceasedDate == null? "-" : Model.Author.DeceasedDate?.ToString("dd MMMM yyyy"))</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>@Model.Author.Education</td>
+            </tr>
+            <tr>
+                <td>Summary</td>
+                <td>@Model.Author.Summary</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<table class="tablecontent">
+    <thead>
+        <th>Book Title</th>
+        <th>Category</th>
+        <th>Is Borrowed</th>
+        <th>Release Date</th>
+        <th>Total Page</th>
+    </thead>
+    <tbody>
+        @{
+            foreach(var book in Model.Books)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.CategoryName</td>
+                    <td>@(book.IsBorrowed == true? "Borrowed" : "Available")</td>
+                    <td>@book.ReleaseDate</td>
+                    <td>@book.TotalPage</td>
+                </tr>
+            }
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="5"></td>
+        </tr>
+    </tfoot>
+</table>

@@ -1,0 +1,155 @@
+<header>
+    <div class="bread-crumbs">
+        <a class="toggle-menu" href="javascript:;"><i class="fas fa-bars"></i></a>
+        <span>SALES INDEX</span>
+    </div>
+    <div class="user-wrapper">
+        <partial name="_LoginButton"></partial>
+    </div>
+</header>
+<main>
+    <form method="post" class="sales-form" action="">
+        <input type="hidden" />
+        <input type="hidden" />
+        <div class="sales-form-flex">
+            <h1>Insert New Sales</h1>
+            <button>X</button>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>sales City*</label></td>
+                    <td>
+                        <input type="text" name="city" id="nameinput">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label>Remark</label></td>
+                    <td>
+                        <textarea name="remark" id="remarkinput"></textarea>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit" id="insertsubmit">Insert New sales</button>
+    </form>
+    <form method="post" class="sales-edit" action="">
+        <input type="hidden" />
+        <input type="hidden" />
+        <div class="sales-edit-flex">
+            <h1>Update sales</h1>
+            <button>X</button>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label>sales City*</label></td>
+                    <td>
+                        <input type="text" name="city" id="editname">
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textarea-label"><label>Remark</label></td>
+                    <td>
+                        <textarea name="remark" id="editremark"></textarea>
+                        <div class="field-validation-error"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="blue-button" type="submit" id="editsubmit">Update sales</button>
+    </form>
+    <div class="grid-container sales-detail">
+        <section class="header-info">
+            <div class="sales-detail-flex">
+                <div>
+                    <div>City: <span class="cityname-detail">Bandung</span></div>
+                    <div>Remark: <span class="remark-detail">No Store or Office (Employee Allowance)</span></div>
+                </div>
+                <button>X</button>
+            </div>
+        </section>
+        <form method="get" class="filter" action="">
+            <input type="hidden" name="id">
+            <input type="text" name="employeeNumber" placeholder="Employee Number...">
+            <input type="text" name="name" placeholder="Full Name..." th:value="${name}">
+            <select name="employeeLevel">
+                <option th:value=null>No Specific Level</option>
+                <option value="1">Regional_Sales_Director</option>
+                <option value="2">Retail_Sales</option>
+                <option value="3">Wholesale_Sales</option>
+            </select>
+            <input type="text" name="superiorName" placeholder="Superior Name...">
+            <button class="blue-button" type="submit">Search</button>
+        </form>
+        <table>
+            <thead>
+                <th>Employee Number</th>
+                <th>Full Name</th>
+                <th>Level</th>
+                <th>Superior</th>
+            </thead>
+            <tbody class="salesdetailtbody">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="pagination">
+                            <div id="pagecount-detail">default</div>
+                            <div id="paginationdiv-detail">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="grid-container sales-index">
+        <form method="get" class="filter">
+            <input type="text" name="city" id="nameinputsearch" placeholder="sales City...">
+            <button class="blue-button" id="searchbutton">Search</button>
+        </form>
+        <form method="get" class="filter" action="">
+		        <input type="text" name="employeeNumber" placeholder="Employee Number...">
+		        <input type="text" name="name" placeholder="Full Name...">
+		        <select name="employeeLevel">
+		        	<option th:value=null>No Specific Level</option>
+				    <option value="1">Regional_Sales_Director</option>
+					<option value="2">Retail_Sales</option>
+					<option value="3">Wholesale_Sales</option>
+		        </select>
+		        <input type="text" name="superiorName" placeholder="Superior Name...">
+		        <button class="blue-button" type="submit">Search</button>
+		    </form>
+        <a class="blue-button create-button">Insert New sales</a>
+        <table>
+            <thead>
+                <th>Action</th>
+                <th>Employee Number</th>
+                <th>Full Name</th>
+                <th>Level</th>
+                <th>Superior</th>
+            </thead>
+            <tbody class="maintbody">
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">
+                        <div class="pagination">
+                            <div id="pagecount">default</div>
+                            <div id="paginationdiv">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="disable-container"></div>
+</main>
+<script src="~/JS/sales.js"></script>

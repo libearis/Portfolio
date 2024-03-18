@@ -1,0 +1,36 @@
+@model Shop.ProductVM
+@section Breadcrumbs{
+    <span><a asp-action="Index"><h3>Merchandise > <a asp-action="Insert">Add Product</a></h3></a></span>
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<h2>Edit Product</h2>
+<form method="post" asp-action="Edit" asp-route-id="@Model.Id" class="upsert">
+    <table class="upsert">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" asp-for="Name"></td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td><input type="text" asp-for="CategoryName"></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td><textarea cols="30" rows="5" asp-for="Description"></textarea></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="number" asp-for="@Model.UnitPriceInt"></td>
+        </tr>
+        <tr>
+            <td>Discontinue</td>
+            <td><input type="checkbox" asp-for="Discontinue"></td>
+        </tr>
+    </table>
+    <button class="button-25" type="submit"><a>Save</a></button>
+    <button class="button-25" type="submit"><a asp-action="Index">Cancel</a></button>
+</form>
